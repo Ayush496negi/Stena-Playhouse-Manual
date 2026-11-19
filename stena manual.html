@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Stena – Manuals</title>
+<meta name="description" content="Download the Stena playhouse assembly manuals in your language.">
+<meta name="theme-color" content="#FFA400">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Oswald:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--orange:#FFA400;--orange-deep:#E58F00;--teal:#2A9488;--teal-dark:#1E6F66;--mint:#DFF2EF;--ink:#1F2A30;--muted:#5B6870;--paper:#fff;--gray:#F1F2F4;--line:#E3E6E8;color-scheme:light}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:'Lato',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.5;min-height:100vh;display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0)}
+.band{background:var(--orange);height:10px}
+.wrap{width:100%;max-width:760px;margin:0 auto;padding:0 20px}
+header{padding:28px 0 8px}
+.logolink{display:inline-block;border-radius:8px}
+.logo{width:150px;height:auto;display:block}
+main{flex:1;padding-bottom:40px}
+h1{font-size:clamp(2rem,7vw,3rem);line-height:1.1;font-weight:900;letter-spacing:-.02em;margin-top:28px}
+.rule{width:96px;height:5px;background:var(--orange);border-radius:3px;margin:16px 0 18px}
+.pill{display:inline-block;background:var(--mint);color:var(--teal);font-weight:700;padding:6px 16px;border-radius:999px;font-size:.95rem}
+.lede{color:var(--muted);max-width:52ch;margin-top:14px}
+.list{list-style:none;padding:0;margin-top:28px;display:grid;gap:12px}
+.item{width:100%;display:flex;align-items:center;gap:16px;text-align:left;font:inherit;background:var(--gray);border:2px solid transparent;border-radius:18px;padding:18px 20px;cursor:pointer;color:var(--ink);transition:border-color .15s,background .15s,transform .1s}
+.item:hover{border-color:var(--orange);background:#fff}
+.item:active{transform:scale(.99)}
+.item:focus-visible,.btn:focus-visible,.back:focus-visible,.logolink:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.code{flex:none;width:48px;height:48px;border-radius:14px;background:var(--orange);color:#fff;font-weight:900;display:grid;place-items:center;font-size:1.05rem}
+.name{font-size:1.25rem;font-weight:700;line-height:1.2}
+.sub{display:block;font-size:.9rem;color:var(--muted);font-weight:400}
+.go{margin-left:auto;color:var(--teal);font-weight:700;font-size:.95rem;white-space:nowrap}
+.item.suggest{background:var(--mint);border-color:var(--teal)}
+.item[disabled]{cursor:default;opacity:.6}
+.item[disabled]:hover{border-color:transparent;background:var(--gray)}
+.item[disabled] .code{background:#B9C0C5}
+.item[disabled] .go{color:var(--muted);font-weight:400}
+section[hidden]{display:none}
+.back{display:inline-flex;align-items:center;gap:8px;margin-top:24px;background:none;border:0;font:inherit;font-weight:700;color:var(--teal);cursor:pointer;padding:8px 0}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-weight:700;font-size:1.05rem;border-radius:14px;padding:16px 24px;min-height:54px;flex:1 1 220px;transition:background .15s}
+.btn.primary{background:var(--orange);color:var(--ink)}
+.btn.primary:hover{background:var(--orange-deep)}
+.btn.ghost{background:var(--mint);color:var(--teal-dark)}
+.btn.ghost:hover{background:#cfeae5}
+
+/* Product picture */
+.photo{margin-top:24px;border:2px solid var(--line);border-radius:18px;overflow:hidden;background:var(--gray);padding:16px;min-height:320px;display:flex;align-items:center;justify-content:center}
+.photo img{display:block;width:100%;height:auto;max-height:560px;object-fit:contain;border-radius:10px;background:#fff}
+.photo img[hidden]{display:none}
+@media (min-width:820px){.wrap{max-width:900px}}
+
+.notice{margin-top:28px;background:var(--gray);border-left:6px solid var(--orange);border-radius:14px;padding:16px 20px;font-size:.95rem}
+.notice strong{display:block;margin-bottom:2px}
+footer{border-top:1px solid var(--line);padding:22px 0 calc(22px + env(safe-area-inset-bottom,0));font-size:.92rem;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px}
+footer a{color:var(--teal);font-weight:700;text-decoration:none}
+footer a:hover{text-decoration:underline}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="band"></div>
+<header><div class="wrap">
+  <a class="logolink" id="logo" href="#" aria-label="Stena – back to main page"><svg class="logo" viewBox="0 0 300 190" role="img" aria-label="Stena">
+    <ellipse cx="158" cy="100" rx="136" ry="78" fill="#D9D9D9"/>
+    <ellipse cx="150" cy="92" rx="136" ry="78" fill="#FFA400"/>
+    <text x="150" y="124" text-anchor="middle" font-family="Oswald,Impact,'Arial Narrow',sans-serif" font-weight="700" font-size="112" fill="#fff" stroke="#FFA400" stroke-width="10" stroke-linejoin="round" paint-order="stroke">Stena</text>
+  </svg></a>
+</div></header>
+
+<main><div class="wrap">
+  <!-- Step 1: product -->
+  <section id="s-product">
+    <span class="pill">Assembly manuals</span>
+    <h1>Choose your playhouse</h1>
+    <div class="rule"></div>
+    <p class="lede">Find the assembly manual for your Stena playhouse. Pick your model first, then your language.</p>
+    <ul class="list" id="products"></ul>
+  </section>
+
+  <!-- Step 2: language -->
+  <section id="s-lang" hidden>
+    <button class="back" id="back-product" type="button">← All playhouses</button>
+    <span class="pill" id="l-product"></span>
+    <h1>Choose your language</h1>
+    <div class="rule"></div>
+    <p class="lede">View or download the assembly manual in your own language.</p>
+    <ul class="list" id="langs"></ul>
+  </section>
+
+  <!-- Step 3: manual + product picture -->
+  <section id="s-view" hidden>
+    <button class="back" id="back-lang" type="button"></button>
+    <span class="pill" id="v-product"></span>
+    <h1 id="v-title"></h1>
+    <div class="rule"></div>
+    <div class="actions">
+      <a class="btn primary" id="open" target="_blank" rel="noopener"></a>
+      <a class="btn ghost" id="download" download></a>
+    </div>
+    <div class="photo" id="photo-box"><img id="photo" alt=""></div>
+    <div class="notice" id="safety"></div>
+  </section>
+</div></main>
+
+<footer><div class="wrap">
+  <span>Need help? Email us:</span>
+  <a href="mailto:info@madeproducts.nl">info@madeproducts.nl</a>
+</div></footer>
+
+<script>
+/* ------------------------------------------------------------------
+   SETUP
+   • PDFs go in a "manuals" folder next to this page, named
+     <product>-<language>.pdf   e.g. manuals/slide-nl.pdf
+   • Product pictures go in an "images" folder, named as in `img` below
+     (images/slide.jpg, images/bridge.jpg, images/swing.jpg).
+   To add the English manuals later: save the PDFs as
+   manuals/slide-en.pdf, manuals/bridge-en.pdf, manuals/swing-en.pdf
+   and change `en:false` to `en:true` for each product below.
+------------------------------------------------------------------- */
+var LANGS = [
+  {code:"en", label:"English"},
+  {code:"nl", label:"Nederlands"},
+  {code:"de", label:"Deutsch"},
+  {code:"fr", label:"Français"}
+];
+var PRODUCTS = [
+  { id:"slide",  img:"images/slide.jpg",  ready:{en:false,nl:true,de:true,fr:true},
+    names:{en:"Playhouse with slide", nl:"Speelhuisje met glijbaan", de:"Spielhaus mit Rutsche", fr:"Maisonnette avec toboggan"} },
+  { id:"bridge", img:"images/bridge.jpg", ready:{en:false,nl:true,de:true,fr:true},
+    names:{en:"Playhouse with slide and bridge", nl:"Speelhuisje met glijbaan en loopbrug", de:"Spielhaus mit Rutsche und Laufbrücke", fr:"Maison de jeu avec toboggan et passerelle"} },
+  { id:"swing",  img:"images/swing.jpg",  ready:{en:false,nl:true,de:true,fr:true},
+    names:{en:"Playhouse with slide and swing", nl:"Speelhuisje met glijbaan en schommel", de:"Spielhaus mit Rutsche und Schaukel", fr:"Maisonnette avec toboggan et balançoire"} }
+];
+/* Text shown after a language is chosen (page stays English until then) */
+var T = {
+  en:{title:"Assembly manual",open:"Open manual",dl:"Download PDF",back:"Choose another language",safe:"Safety first",txt:"Have an adult assemble the product and keep small parts away from children."},
+  nl:{title:"Montagehandleiding",open:"Handleiding openen",dl:"PDF downloaden",back:"Andere taal kiezen",safe:"Veiligheid eerst",txt:"Laat een volwassene monteren en houd kleine onderdelen buiten bereik van kinderen."},
+  de:{title:"Montageanleitung",open:"Anleitung öffnen",dl:"PDF herunterladen",back:"Andere Sprache wählen",safe:"Sicherheit zuerst",txt:"Die Montage sollte durch einen Erwachsenen erfolgen. Kleinteile von Kindern fernhalten."},
+  fr:{title:"Notice de montage",open:"Ouvrir la notice",dl:"Télécharger le PDF",back:"Choisir une autre langue",safe:"La sécurité d’abord",txt:"Le montage doit être effectué par un adulte. Gardez les petites pièces hors de portée des enfants."}
+};
+
+function $(id){return document.getElementById(id);}
+function prod(id){return PRODUCTS.filter(function(p){return p.id===id;})[0];}
+function file(p,c){return "manuals/"+p.id+"-"+c+".pdf";}
+function show(sec){["s-product","s-lang","s-view"].forEach(function(s){$(s).hidden = s!==sec;});window.scrollTo(0,0);}
+function setLang(c){document.documentElement.lang=c;}
+function suggested(p){
+  var prefs=(navigator.languages&&navigator.languages.length)?navigator.languages:[navigator.language||"en"];
+  for(var i=0;i<prefs.length;i++){var c=String(prefs[i]).slice(0,2).toLowerCase();if(p.ready[c])return c;}
+  return null;
+}
+function row(code,title,sub,go,cls,disabled,onclick){
+  var li=document.createElement("li"),b=document.createElement("button");
+  b.type="button";b.className="item"+(cls?" "+cls:"");
+  b.innerHTML='<span class="code"></span><span class="name"></span><span class="go"></span>';
+  b.querySelector(".code").textContent=code;
+  var n=b.querySelector(".name");n.appendChild(document.createTextNode(title));
+  if(sub){var s=document.createElement("span");s.className="sub";s.textContent=sub;n.appendChild(s);}
+  b.querySelector(".go").textContent=go;
+  if(disabled)b.disabled=true;else b.addEventListener("click",onclick);
+  li.appendChild(b);return li;
+}
+
+/* Hide the picture box if the image file is missing */
+$("photo").addEventListener("error",function(){this.hidden=true;});
+$("photo").addEventListener("load",function(){this.hidden=false;});
+
+function viewProducts(){
+  setLang("en");document.title="Stena – Manuals";
+  var ul=$("products");ul.innerHTML="";
+  PRODUCTS.forEach(function(p,i){
+    ul.appendChild(row(String(i+1),p.names.en,"4 languages","Select →","",false,function(){go(p.id);}));
+  });
+  show("s-product");
+}
+function viewLangs(id){
+  var p=prod(id);if(!p)return viewProducts();
+  setLang("en");document.title="Stena – "+p.names.en;
+  $("l-product").textContent=p.names.en;
+  var sug=suggested(p),ul=$("langs");ul.innerHTML="";
+  LANGS.forEach(function(l){
+    var ok=p.ready[l.code];
+    ul.appendChild(row(l.code.toUpperCase(),l.label,l.code===sug?"Suggested for you":p.names[l.code],ok?"View →":"Coming soon",l.code===sug?"suggest":"",!ok,function(){go(id,l.code);}));
+  });
+  show("s-lang");
+}
+function viewManual(id,c){
+  var p=prod(id);
+  if(!p||!p.ready[c])return viewLangs(id);
+  var t=T[c],f=file(p,c);
+  setLang(c);document.title="Stena – "+t.title+" – "+p.names[c];
+  $("v-product").textContent=p.names[c];
+  $("v-title").textContent=t.title;
+  $("open").textContent=t.open;$("open").href=f;
+  $("download").textContent=t.dl;$("download").href=f;
+  $("download").setAttribute("download","stena-"+id+"-"+c+".pdf");
+  $("back-lang").textContent="← "+t.back;
+  $("safety").innerHTML="<strong></strong><span></span>";
+  $("safety").firstChild.textContent=t.safe;$("safety").lastChild.textContent=t.txt;
+  $("photo").alt=p.names[c];
+  $("photo").src=p.img;
+  show("s-view");
+}
+
+/* Routing via #slide  or  #slide-nl  (hash only: works from a QR code) */
+function go(id,c){location.hash=c?id+"-"+c:id||"";}
+function route(){
+  var h=location.hash.replace("#","").split("-"),id=h[0],c=h[1];
+  $("photo").removeAttribute("src");
+  if(id&&c)viewManual(id,c);else if(id)viewLangs(id);else viewProducts();
+}
+window.addEventListener("hashchange",route);
+$("back-product").addEventListener("click",function(){go();});
+$("back-lang").addEventListener("click",function(){go(location.hash.replace("#","").split("-")[0]);});
+/* Logo always returns to the main page */
+$("logo").addEventListener("click",function(e){
+  e.preventDefault();
+  if(location.hash&&location.hash!=="#")location.hash="";else route();
+});
+route();
+</script>
+</body>
+</html>
